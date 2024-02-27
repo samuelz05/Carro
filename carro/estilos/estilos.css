@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    background-image: url(../imagenes/fondo1.jpg);
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+.contenedorMover{
+    animation: moverFondo 3s infinite linear reverse;
+}
+
+
+.img1{
+    width: 30rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 25rem;
+}
+
+.llanta1{
+    width: 5rem;
+    position: absolute;
+    top: 34rem;
+    left: 26.5rem;
+}
+
+.llanta1Mover {
+    animation: moverLlantas infinite linear 2s;
+}
+
+.llanta2{
+    width: 5rem;
+    position: absolute;
+    top: 34rem;
+    left: 48rem;
+}
+
+.llanta2Mover {
+    animation: moverLlantas infinite linear 2s;
+}
+
+.luz{
+    width: 10rem;
+    position: absolute;
+    top: 32.5rem;
+    left: 52rem;
+   
+}
+.luzMover{
+    animation: prendeLuz 1s infinite;
+}
+.sprite{
+    background: url(../imagenes/Sprite.png);
+    width: 170px;
+    height: 120px;
+    position: absolute;
+    top: 30rem;
+    left: 16em;
+    
+}
+.spriteMover{
+    animation: humo 2s steps(6) infinite;
+}
+@keyframes humo {
+    100%{
+        background-position-x: 1059px;
+    }
+    
+}
+@keyframes moverLlantas {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moverFondo {
+    100%{
+        background-position-x:1500px;
+    }
+}
+
+@keyframes prendeLuz {
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+.oculto{
+    display: none;
+}
